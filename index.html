@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Santander</title>
+    <link rel="stylesheet" href="./css/santander.css">
+    <link rel="icon " href="./img/faviconSantader.png">
+   
+</head>
+<body>
+    <table class="first">
+        <tr>
+            <td>
+                <a href="https://www.bancosantander.es" target="_blank" title="Fabrica">
+                    <img src="./img/logoSantander2.JPG" alt="Santander">
+                </a>
+            </td>
+            <td>
+                <h2>Formulario de 
+                     <br>transferencias</h2>
+            </td>
+        </tr>
+    </table>
+
+    <form >
+        <div>
+            <fieldset class="cuadrado" >
+                <label for="cuenta-debitar">Seleccione cuenta a debitar: <br></label>  
+                <select class="campo" name="cuenta-debitar" id="cuenta-debitar" >
+                    <option value="defecto" selected>...</option>
+                    <option value="ahorro">Ahorro</option>
+                    <option value="corriente">riente</option>
+                    <option value="crédito">Crédito</option>
+                </select>   <br>
+
+                <label for="cuenta-abonar"><br> Número de cuenta a abonar :<br></label>
+                <input class="campo" type="text" name="cuenta-abonar" > <br>
+
+                <label for="nombre-destinatario"> <br>Nombre destinatario: </label>
+                <input class="campo" type="text" name="nombre-destinatario"> <br>
+
+                <label for="email"> <br>Email: <br></label>
+                <input class="campo" type="text" name="email"> <br>
+
+                <label for="monto"> <br>Monto: <br></label>
+                <input class="campo" type="number" name="monto"> <br>
+                
+                <label for="fecha-envio"> <br>Fecha de envio: <br></label>
+                <input class="campo" type="date" name="fecha-envio"> <br>
+
+
+                <button align="center" class="btn" type="submit">Transferir</button>
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>
